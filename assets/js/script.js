@@ -1,3 +1,4 @@
+// Global Variables
 const apiKey = "e1fb16935028f3a98177a7d7a2d4d615";
 const searchButton = document.querySelector("#searchButton");
 const cityButtons = document.querySelector(".recentCities");
@@ -9,8 +10,14 @@ function searchCity(newCity) {
   console.log(newCity);
   let cityName = newCity;
   console.log(cityName);
-
+// API Link
   const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}`;
+  // Get Data from API
+  // recieve response and checks if its ok
+  // parse the response
+  // Gives the current weather data
+  // should store the city name
+  // then displays five day forecast
   fetch(apiUrl).then(function (response) {
     if (response.ok) {
       response.json().then(function (data) {
@@ -25,7 +32,7 @@ function searchCity(newCity) {
     }
   });
 }
-
+// Current weather
 function renderCurrentWeather(city, weather) {
   const currentWeatherDiv = document.querySelector("#currentWeather");
 
@@ -56,7 +63,7 @@ function renderCurrentWeather(city, weather) {
     humidityField
   );
 }
-
+// display 5 weather
 function dsiplayFiveDaysData(weather) {
   const fiveDaysDiv = document.querySelector(".forecast");
   const fiveDaysData = document.querySelector(".forecast-cards");
@@ -109,13 +116,13 @@ function dsiplayFiveDaysData(weather) {
     }
   }
 }
-
+// store searched cities in local storage
 function storeSearchedCities(city) {
   storedCities.push(city);
   storedCities = [...new Set(storedCities)];
   localStorage.setItem("cities", JSON.stringify(storedCities));
 }
-
+// show recently searched for cities
 function displayRecentSearch() {
   const recentSearchDiv = document.querySelector(".recentCities");
   recentSearchDiv.textContent = "";
@@ -134,7 +141,7 @@ function handleSearchHistory(e) {
 
   searchCity(e.target.textContent);
 }
-
+// format the date
 function formatDate(date) {
   return date.toLocaleDateString("en-US", {
     year: "numeric",
@@ -142,15 +149,15 @@ function formatDate(date) {
     day: "2-digit",
   });
 }
-
+// Fix the temp to F
 function convertTemp(kelvin) {
   return (((kelvin - 273.15) * 9) / 5 + 32).toFixed(2);
 }
-
+// Fix wind speend to Miles
 function convertWind(mps) {
   return (mps * 2.23694).toFixed(2);
 }
-
+// Listen for Click
 searchButton.addEventListener("click", () => {
   let searchInputValue = searchInput.value;
   if (searchInputValue) {

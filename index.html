@@ -11,11 +11,14 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- Header -->
     <header>
       <h1>Reina's Weather DashBoard</h1>
     </header>
+    <!-- Define Row and Columns -->
     <main class="row container mt-4">
       <section class="col-md-4 searchSection">
+        <!-- Search form -->
         <h2>Enter a City:</h2>
         <div class="inputGroup">
           <input type="text" id="searchInput" placeholder="Type City" />
@@ -25,14 +28,16 @@
             </button>
           </div>
         </div>
-
+<!-- lists recently searched for Cities -->
         <div class="list-group recentCities" col-md-8></div>
       </section>
 
       <section class="col-md-8">
+        <!-- Show Current Weather -->
         <div class="currentWeather mb-4">
           <div id="currentWeather"></div>
         </div>
+        <!-- Five Forecast -->
         <div class="forecast">
           <div class="row forecast-cards"></div>
         </div>
