@@ -58,16 +58,15 @@ function renderCurrentWeather(city, weather) {
 }
 
 function dsiplayFiveDaysData(weather) {
-  const forecastH2 = document.createElement("h2");
   const fiveDaysDiv = document.querySelector(".forecast");
   const fiveDaysData = document.querySelector(".forecast-cards");
-  
+  const forecasth2 = document.createElement("h2");
 
   fiveDaysData.textContent = "";
 
-  if (forecastH2.textContent == "") {
-    forecastH2.textContent = "5 Day Forecast";
-    fiveDaysDiv.append(forecastH2);
+  if (forecasth2.textContent == "") {
+    forecasth2.textContent = "5 Day Forecast";
+    fiveDaysDiv.append(forecasth2);
   }
 
   for (let i = 0; i < weather.list.length; i++) {

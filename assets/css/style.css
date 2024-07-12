@@ -42,7 +42,7 @@ body {
     flex: 1;
   }
   .forecast-card {
-    gap: 1rem;
+        gap: 1rem;
   }
   
   .currentWeather h2 {
@@ -61,8 +61,9 @@ body {
   }
   
  
-   .forecast {  margin-bottom: 2rem; 
-   } 
+   .forecast {  
+    margin-bottom: 2rem;  
+     }   
 
   .currentWeather  { 
      margin-bottom: 2rem;

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>It's A Weather Dashboard</title>
@@ -15,36 +15,30 @@
       <h1>Reina's Weather DashBoard</h1>
     </header>
     <main class="row container mt-4">
-    
-        <section class="col-md-4 searchSection">
-          <h2>Enter a City:</h2>
-          <div class="inputGroup">
-            <input type="text" id="searchInput" placeholder="Type City" />
-            <div class="inputGroup-append">
-              <button class="btn btn-primary" id="searchButton" type="button">
-                Search
-              </button>
-            </div>
+      <section class="col-md-4 searchSection">
+        <h2>Enter a City:</h2>
+        <div class="inputGroup">
+          <input type="text" id="searchInput" placeholder="Type City" />
+          <div class="inputGroup-append">
+            <button class="btn btn-primary" id="searchButton" type="button">
+              Search
+            </button>
           </div>
-    
-          <div class="list-group recentCities" col-md-8></div>
-        </section>
-  
-    
-        <section class="col-md-8" >
-          <div class="currentWeather mb-4">
-            <div id="currentWeather"></div>
-          </div>
-  
-        
-          <div class="forecast">
-           
-            <div class="row forecast-cards"></div>
-    
-          </div>
-        </section>
-      </main>
-      <script src="./assets/js/script.js"></script>
-    </body>
-  </html>
-  
+        </div>
+
+        <div class="list-group recentCities" col-md-8></div>
+      </section>
+
+      <section class="col-md-8">
+        <div class="currentWeather mb-4">
+          <div id="currentWeather"></div>
+        </div>
+        <div class="forecast">
+          <div class="row forecast-cards"></div>
+        </div>
+      </section>
+      
+    </main>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
