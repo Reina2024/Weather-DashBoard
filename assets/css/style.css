@@ -1,0 +1,72 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  header {
+    background-color: #0a377c;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 3 rem;
+  }
+  
+  
+  
+  input[type="text"] {
+    padding: 1rem;
+    width: 100%;
+    margin-right: 12px;
+  }
+  
+  #searchButton {
+    padding: 1rem;
+    background-color: #d900ff;
+    color: whitesmoke;
+    cursor: pointer;
+  }
+  
+
+  
+  .forecast-card {
+    background-color: #f1f1f13f;
+    padding: 1rem;
+    border-radius: 10px;
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .currentWeather h2 {
+    font-weight:normal;
+    font-style: italic;
+  }
+  
+  .recentCities button {
+    padding: 0.5rem;
+    background-color: #d34abc;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+  
+ 
+  .forecast {
+    margin-bottom: 2rem;
+  }
+
+  .currentWeather
+  {
+    margin-bottom: 2rem;
+  }
+
+  .searchSection 
+  {
+    margin-bottom: 2rem;
+  }
