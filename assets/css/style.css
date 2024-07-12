@@ -4,16 +4,17 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
   }
   
   header {
-    background-color: #0a377c;
+    background-color: #f8f085;
     padding: 5px;
     text-align: center;
   }
   
   main {
-    padding: 3 rem;
+    padding: 3rem;
   }
   
   
@@ -34,11 +35,13 @@ body {
 
   
   .forecast-card {
-    background-color: #f1f1f13f;
+    background-color:grey;
     padding: 1rem;
+    margin: 0.25rem;
     border-radius: 10px;
     flex: 1;
-    display: flex;
+  }
+  .forecast-card {
     gap: 1rem;
   }
   
@@ -49,24 +52,27 @@ body {
   
   .recentCities button {
     padding: 0.5rem;
-    background-color: #d34abc;
-    color: whitesmoke;
+    background-color: #f8f085;
+    color: black;
+    font-style: bold;
     cursor: pointer;
     margin-top: 12px;
     margin-bottom: 12px;
   }
   
  
-  .forecast {
-    margin-bottom: 2rem;
-  }
+   .forecast {  margin-bottom: 2rem; 
+   } 
 
-  .currentWeather
-  {
-    margin-bottom: 2rem;
-  }
+  .currentWeather  { 
+     margin-bottom: 2rem;
+   } 
 
   .searchSection 
+  { 
+     margin-bottom: 2rem; 
+   } 
+  .border 
   {
-    margin-bottom: 2rem;
+    border: 5px, solid, darkgrey;
   }
