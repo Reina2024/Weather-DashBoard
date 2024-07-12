@@ -3,9 +3,9 @@ This repo is for a weather dashboard that operates within a web browser, dynamic
 
 # Screenshot
 Here is a screen cap of my project:
-![alt text](./assets/images/Screenshot%202024-07-12%20at%201.56.04 AM.png) "Screen Cap of my Project"
+![alt text](./assets/images/Screenshot%202024-07-12%20at%201.56.04 AM.png) 
 
-![alt text](./assets/images/Screenshot%202024-07-12%20at%201.56.18 AM.png) "Screen Cap of my Project"
+![alt text](./assets/images/Screenshot%202024-07-12%20at%201.56.18 AM.png) 
 # Links
 https://reina2024.github.io/Weather-DashBoard/
 
