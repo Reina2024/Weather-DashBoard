@@ -24,8 +24,8 @@
         response.json().then(function (data) {
   
   
-          document.querySelector('.currentWeather h3').style.display = 'none';
-          document.querySelector('.forecast h3').style.display = 'none';
+          // document.querySelector('.currentWeather h3').style.display = 'none';
+          // document.querySelector('.forecast h3').style.display = 'none';
   
   
   
