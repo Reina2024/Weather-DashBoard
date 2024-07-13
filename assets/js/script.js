@@ -119,7 +119,7 @@ function dsiplayFiveDaysData(weather) {
       windField.textContent = `Wind: ${convertWind(wind)} mph`;
       humidityField.textContent = `Humidity: ${humidity}%`;
       iconField.setAttribute("src", iconUrl);
-      dateField.style.fontSize = "1.5rem";
+      dateField.style.fontSize = "1rem";
       dateField.style.fontWeight = "bolder";
       forecastCard.append(
         dateField,
